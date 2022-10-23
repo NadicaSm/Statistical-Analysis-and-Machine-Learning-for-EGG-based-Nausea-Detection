@@ -32,7 +32,7 @@ library(pROC)
 # version.string R version 4.1.2 (2021-11-01)
 # nickname       Bird Hippie 
 
-# read the data (CHANGE THESE TWO LINES IF USING (NO)NAUSY DATA)
+# read the data (change the file manually)
 # read non-noisy data
 # dat <- read.csv("dat.csv")
 # read noisy data
@@ -58,7 +58,7 @@ dat <- rename(dat, MagDF = magDf)
 # noisy params, change if reading noisy params
  params <- select(dat, !(c(X, id, snrEGG)))
 
-# set params
+# set params as factors
 dat$nausea_onset <- factor(dat$nausea_onset)
 params$nausea_onset <- factor(dat$nausea_onset)
 
@@ -104,7 +104,7 @@ print(d$byClass[6])
 model1
 
 # ROC and AUC for test set
-roc_score = roc(as.numeric(TestSet$nausea_onset), as.numeric(test_predict1)) #AUC score
+roc_score <- roc(as.numeric(TestSet$nausea_onset), as.numeric(test_predict1)) # AUC score
 roc_score
 # change title for each run, if you want to save figures
 title <- "ROC, SNR = 17 dB"
@@ -116,39 +116,36 @@ plot(roc_score, main = title)
 
 # ROC and AUC for training set
 ROC <- plot.roc(model1$pred$obs, model1$pred$rowIndex)
-coords(ROC, "b", ret="t", best.method="youden")
+coords(ROC, "b", ret = "t", best.method = "youden")
 ROC$auc
 
 # plot importances
-# ggplot(caret::varImp(model1)) + theme_light()
-# ggsave("dat.jpg", dpi=300)
-
 #ggplot(caret::varImp(model1)) + theme_light() +
 #  theme(text = element_text(size = 20)) + 
 #  xlim(c("Autocorr", "SampEntP_m3", "CS", "DF", "SampEntP_m4"))
-#ggsave("datx.jpg", dpi=300)
+#ggsave("dat.jpg", dpi=300)
 
 #ggplot(caret::varImp(model1)) + theme_light() +
 #  theme(text = element_text(size = 20)) + 
 #  xlim(c("SampEntT_m3", "SampEntP_m2", "SpectEnt", "SampEntP_m3", "SampEntP_m4"))
-#ggsave("dat-noise_SNR-20dBx.jpg", dpi=300)
+#ggsave("dat-noise_SNR-20dB.jpg", dpi=300)
 
 #ggplot(caret::varImp(model1)) + theme_light() +
 #  theme(text = element_text(size = 20)) + 
 #  xlim(c("MagDF", "SpectEnt", "SampEntP_m3", "SampEntP_m2", "median"))
-#ggsave("dat-noise_SNR-10dBx.jpg", dpi=300)
+#ggsave("dat-noise_SNR-10dB.jpg", dpi=300)
 
 #ggplot(caret::varImp(model1)) + theme_light() +
 #  theme(text = element_text(size = 20)) + 
 #  xlim(c("SampEntP_m2", "SampEntP_m3", "DF", "SampEntP_m4", "median"))
-#ggsave("dat-noise_SNR+0dBx.jpg", dpi=300)
+#ggsave("dat-noise_SNR+0dB.jpg", dpi=300)
 
 #ggplot(caret::varImp(model1)) + theme_light() +
 #  theme(text = element_text(size = 20)) + 
 #  xlim(c("SampEntP_m2", "SpectEnt", "SampEntP_m3", "DF", "SampEntP_m4"))
-#ggsave("dat-noise_SNR+10dBx.jpg", dpi=300)
+#ggsave("dat-noise_SNR+10dB.jpg", dpi=300)
 
 #ggplot(caret::varImp(model1)) + theme_light() +
 #  theme(text = element_text(size = 20)) + 
 #  xlim(c("SampEntT_m2", "SampEntP_m2", "SampEntP_m4", "SampEntT_m3", "SampEntP_m3"))
-#ggsave("dat-noise_SNR+20dBx.jpg", dpi=300)
+#ggsave("dat-noise_SNR+20dB.jpg", dpi=300)
