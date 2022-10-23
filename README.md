@@ -1,5 +1,5 @@
 # Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection
-This repository contains R code for reproducing results presented in the manuscript "Electrogastrogram-derived Features for Automated Sickness Detection in Driving Simulator" and authored by Grega Jakus, Jaka Sodnik, and Nadica Miljković.
+This repository contains R code for reproducing results presented in the manuscript "Electrogastrogram-derived Features for Automated Sickness Detection in Driving Simulator" and authored by Grega Jakus (ORCID: [0000-0001-9373-7885](https://orcid.org/0000-0001-9373-7885)), Jaka Sodnik (ORCID: [0000-0002-8915-9493](https://orcid.org/0000-0002-8915-9493)), and Nadica Miljković (ORCID: [0000-0002-3933-6076](https://orcid.org/0000-0002-3933-6076)).
 
 ## GitHub repo contents
 This repository contains both data and code, as well as [README.md](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/README.md) and [license](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/LICENSE) files.
