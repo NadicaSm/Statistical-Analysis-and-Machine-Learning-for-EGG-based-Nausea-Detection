@@ -25,7 +25,7 @@ library(dplyr)
 # version.string R version 4.1.2 (2021-11-01)
 # nickname       Bird Hippie 
 
-# read the data
+# read the data (uncomment applicable lines, whether reading original or noisy parameters)
 # read non-noisy data
 # dat <- read.csv("dat.csv")
 # params <- select(dat, !(c(X, id)))
@@ -37,7 +37,7 @@ library(dplyr)
  dat <- read.csv("dat-noise_SNR+20dB.csv")
  params <- select(dat, !(c(X, id)))
 
-# set parameters
+# set parameters as factors
 dat$nausea_onset <- factor(dat$nausea_onset)
 params$nausea_onset <- factor(dat$nausea_onset)
 
@@ -70,7 +70,7 @@ chisq.test(dat$SampEntT_m2, dat$nausea_onset, simulate.p.value = T)
 chisq.test(dat$SampEntT_m3, dat$nausea_onset, simulate.p.value = T)
 chisq.test(dat$SampEntT_m4, dat$nausea_onset, simulate.p.value = T)
 
-# count categorical variables
+# descriptive statistics for categorical variables
 datNausea <- filter(dat, nausea_onset == 1)
 datNonNausea <- filter(dat, nausea_onset == 0)
 
