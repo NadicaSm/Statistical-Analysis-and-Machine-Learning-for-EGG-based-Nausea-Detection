@@ -33,7 +33,7 @@ library(pROC)
 # nickname       Bird Hippie 
 
 # read the data
-# read non-noisy data
+# read non-noisy data (the original data should be read for each run)
 dat <- read.csv("dat.csv")
 params <- select(dat, !(c(X, id)))
 # read noisy data (select one file per one run)
@@ -48,7 +48,7 @@ paramsN <- select(datN, !(c(X, id, snrEGG)))
 # noisy data parameters. Two files (containing original and one noisy set)
 # should be uploaded
 
-# set parameters
+# set parameters as factors
 dat$nausea_onset <- factor(dat$nausea_onset)
 params$nausea_onset <- factor(dat$nausea_onset)
 datN$nausea_onset <- factor(datN$nausea_onset)
@@ -96,7 +96,7 @@ print(d$byClass[6])
 model1
 
 # ROC and AUC for test set
-roc_score = roc(as.numeric(TestSet$nausea_onset), as.numeric(test_predict1)) #AUC score
+roc_score <- roc(as.numeric(TestSet$nausea_onset), as.numeric(test_predict1)) # AUC score
 roc_score
 # change title for each run, if you want to save figures
 title <- "ROC, SNR = 17 dB"
@@ -108,7 +108,7 @@ plot(roc_score, main = title)
 
 # ROC and AUC for training set
 ROC <- plot.roc(model1$pred$obs, model1$pred$rowIndex)
-coords(ROC, "b", ret="t", best.method="youden")
+coords(ROC, "b", ret = "t", best.method = "youden")
 ROC$auc
 
 # plot importance (uncomment if necessary)
