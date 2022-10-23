@@ -1,22 +1,22 @@
 # Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection
-This repository contains R code for reproducing results presented in manuscript "Electrogastrogram-derived Features for Automated Sickness Detection in Driving Simulator" and authored by Grega Jakus, Jaka Sodnik, and Nadica Miljković.
+This repository contains R code for reproducing results presented in the manuscript "Electrogastrogram-derived Features for Automated Sickness Detection in Driving Simulator" and authored by Grega Jakus, Jaka Sodnik, and Nadica Miljković.
 
 ## GitHub repo contents
-This reporsitory contains both data and code, as well as [README.md](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/README.md) and [license](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/LICENSE) files.
+This repository contains both data and code, as well as [README.md](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/README.md) and [license](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/LICENSE) files.
 ### EGG-based parameters
-EGG-based features are presented in the following .csv tables:
+EGG-based (Electrogastrogram-based) features on original and noisy data with appropriate SNRs (Signal-to-Noise Raios) are presented in the following .csv tables:
 1) [dat.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat.csv) - EGG-based parameters/features derived from the original dataset
-2) [dat-noise_SNR+0dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B0dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -3 dB)
-3) [dat-noise_SNR+10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 7 dB)
-4) [dat-noise_SNR+20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 17 dB)
-5) [dat-noise_SNR-10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -13 dB)
-6) [dat-noise_SNR-20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -23 dB)
+2) [dat-noise_SNR+0dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B0dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by adding pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -3 dB)
+3) [dat-noise_SNR+10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by adding pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 7 dB)
+4) [dat-noise_SNR+20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by adding pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 17 dB)
+5) [dat-noise_SNR-10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by adding pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -13 dB)
+6) [dat-noise_SNR-20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by adding pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -23 dB)
 ### Code for EGG analysis
 The R code (Team, R. C. R. A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna. https://www.r-project.org, 2021) for analysis of the features shared in .csv tables is given in the following scripts:
-1) [comparison-noise.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/comparison-noise.R) - statistical analysis for comparison of noisy and non-noisy EGG-based parameters and for distinguishing statistical difference on data that correspond to nausea occurence
+1) [comparison-noise.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/comparison-noise.R) - statistical analysis for comparison of noisy and non-noisy EGG-based parameters and for distinguishing statistical difference on data in relation to the nausea occurence
 2) [nausea-categorical.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/nausea-categorical.R) - descriptive statistics of categorical variables
-3) [rf-nausea-classification.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification.R) - classification of nausea occurence based on EGG parameters for each dataset separately
-4) [rf-nausea-classification-noisy-set.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification-noisy-set.R) - classification of nausea occurence based on original EGG parameters tested on noisy test data
+3) [rf-nausea-classification.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification.R) - classification of nausea occurence based on the EGG-based parameters for each dataset separately
+4) [rf-nausea-classification-noisy-set.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification-noisy-set.R) - classification of nausea occurence based on the original EGG-based parameters tested on noisy test data
 
 ## EGG-based features
 Each datatable shared in .csv format contains the following columns:
@@ -43,7 +43,7 @@ Each datatable shared in .csv format contains the following columns:
 21) nausea_onset - binary indicator whether for analyzed datasegment nausea occured or not
 
 ## NOTE
-For the sake of computational reproducibility, each R script contains R version and commented header with [groundhog](https://groundhogr.com/) function that loads packages and appropriate on the selected chosen date from [CRAN](https://cran.r-project.org/) (The Comprehensive R Archive Network).
+For the sake of computational reproducibility, each R script contains R version and commented header with [groundhog](https://groundhogr.com/) function that loads packages and appropriate dependencies for the selected date from [CRAN](https://cran.r-project.org/) (The Comprehensive R Archive Network).
 
 ## Disclaimer
 The R code is provided without any guarantee and it is not intended for medical purposes.
