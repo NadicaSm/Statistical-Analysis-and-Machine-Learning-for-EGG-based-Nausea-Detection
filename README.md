@@ -6,16 +6,16 @@ If you find EGG-based features and R code useful for your own research and teach
 2) Jakus, G., Sodnik, J., Miljković, N. (2022). Electrogastrogram-derived Features for AutomatedSickness Detectionin Driving Simulator. Under Review.
 
 ## GitHub repo contents
-1) dat.csv - EGG-based parameters/features derived from the original dataset
-2) dat-noise_SNR+0dB.csv - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -3 dB)
-3) dat-noise_SNR+10dB.csv- EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 7 dB)
-4) dat-noise_SNR+20dB.csv- EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 17 dB)
-5) dat-noise_SNR-10dB.csv- EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -13 dB)
-6) dat-noise_SNR-20dB.csv- EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -23 dB)
-7) comparison-noise.R - statistical analysis for comparison of noisy and non-noisy EGG-based parameters and for distinguishing statistical difference on data that correspond to nausea occurence
-8) nausea-categorical.R - descriptive statistics of categorical variables
-9) rf-nausea-classification.R - classification of nausea occurence based on EGG parameters for each dataset separately
-10) rf-nausea-classification-noisy-set.R - classification of nausea occurence based on original EGG parameters tested on noisy test data
+1) [dat.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat.csv) - EGG-based parameters/features derived from the original dataset
+2) [dat-noise_SNR+0dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B0dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -3 dB)
+3) [dat-noise_SNR+10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 7 dB)
+4) [dat-noise_SNR+20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR%2B20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is 17 dB)
+5) [dat-noise_SNR-10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -13 dB)
+6) [dat-noise_SNR-20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -23 dB)
+7) [comparison-noise.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/comparison-noise.R) - statistical analysis for comparison of noisy and non-noisy EGG-based parameters and for distinguishing statistical difference on data that correspond to nausea occurence
+8) [nausea-categorical.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/nausea-categorical.R) - descriptive statistics of categorical variables
+9) [rf-nausea-classification.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification.R) - classification of nausea occurence based on EGG parameters for each dataset separately
+10) [rf-nausea-classification-noisy-set.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification-noisy-set.R) - classification of nausea occurence based on original EGG parameters tested on noisy test data
 
 ## EGG-based features
 Each datatable shared in .csv format contains the following columns:
