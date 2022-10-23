@@ -1,7 +1,7 @@
 # Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection
 This repository contains R code for reproducing results presented in the manuscript "Electrogastrogram-derived Features for Automated Sickness Detection in Driving Simulator" and authored by Grega Jakus (ORCID: [0000-0001-9373-7885](https://orcid.org/0000-0001-9373-7885)), Jaka Sodnik (ORCID: [0000-0002-8915-9493](https://orcid.org/0000-0002-8915-9493)), and Nadica Miljković (ORCID: [0000-0002-3933-6076](https://orcid.org/0000-0002-3933-6076)).
 
-## GitHub repo contents
+## GitHub repository contents
 This repository contains both data and code, as well as [README.md](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/README.md) and [license](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/LICENSE) files.
 ### EGG-based parameters
 EGG-based (Electrogastrogram-based) features on original and noisy data with appropriate SNRs (Signal-to-Noise Raios) are presented in the following .csv tables:
@@ -28,19 +28,19 @@ Each datatable shared in .csv format contains the following columns:
 6) df - dominant frequency
 7) cs - crest factor of EGG PSD
 8) sdv - Spectral Variation Distribution
-9) SampEntT_m2 - sample entropy of time series for embedding dimension m = 2
-10) SampEntT_m3 - sample entropy of time series for embedding dimension m = 3
-11) SampEntT_m4 - sample entropy of time series for embedding dimension m = 4
-12) SampEntP_m2 - sample entropy of PSD for embedding dimension m = 2
-13) SampEntP_m3 - sample entropy of PSD for embedding dimension m = 3
-14) SampEntP_m4 - sample entropy of PSD for embedding dimension m = 4
+9) SampEntT_m2 - sample entropy of time series for embedding dimension _m_ = 2
+10) SampEntT_m3 - sample entropy of time series for embedding dimension _m_ = 3
+11) SampEntT_m4 - sample entropy of time series for embedding dimension _m_ = 4
+12) SampEntP_m2 - sample entropy of PSD for embedding dimension _m_ = 2
+13) SampEntP_m3 - sample entropy of PSD for embedding dimension _m_ = 3
+14) SampEntP_m4 - sample entropy of PSD for embedding dimension _m_ = 4
 15) SpectEnt - spectral entropy
 16) Autocorr - autocorrelation zero-crossing
 17) SD1 - transverse line of the Poincaré plot 
 18) SD2 - longitudinal line of the Poincaré plot 
 19) SDEGG - standard deviation obtained from SD1 and SD2
 20) snrEGG - the actual SNR (Signal-to-Noise Ratio) for the instance (only tables reporting parameters derived from semi-synthetic dataset contain this column)
-21) nausea_onset - binary indicator whether for analyzed datasegment nausea occured or not
+21) nausea_onset - binary indicator whether for analyzed data segment nausea occured or not
 
 ## Note on computational reproducibility
 For the sake of computational reproducibility, each R script contains R version and commented header with [groundhog](https://groundhogr.com/) function that loads packages and appropriate dependencies for the selected date from [CRAN](https://cran.r-project.org/) (The Comprehensive R Archive Network).
