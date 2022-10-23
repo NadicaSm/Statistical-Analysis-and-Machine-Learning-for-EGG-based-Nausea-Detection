@@ -42,7 +42,7 @@ Each datatable shared in .csv format contains the following columns:
 20) snrEGG - the actual SNR (Signal-to-Noise Ratio) for the instance (only tables reporting parameters derived from semi-synthetic dataset contain this column)
 21) nausea_onset - binary indicator whether for analyzed datasegment nausea occured or not
 
-## NOTE
+## Note on computational reproducibility
 For the sake of computational reproducibility, each R script contains R version and commented header with [groundhog](https://groundhogr.com/) function that loads packages and appropriate dependencies for the selected date from [CRAN](https://cran.r-project.org/) (The Comprehensive R Archive Network).
 
 ## Disclaimer
