@@ -38,8 +38,11 @@ Each datatable shared in .csv format contains the following columns:
 17) SD1 - transverse line of the Poincaré plot 
 18) SD2 - longitudinal line of the Poincaré plot 
 19) SDEGG - standard deviation obtained from SD1 and SD2
-20) snrEGG - the actual SNR (Signal-to-Noise Ratio) for the instance (only tables reporting parameters for )
+20) snrEGG - the actual SNR (Signal-to-Noise Ratio) for the instance (only tables reporting parameters derived from semi-synthetic dataset contain this column)
 21) nausea_onset - binary indicator whether for analyzed datasegment nausea occured or not
+
+## NOTE
+For the sake of computational reproducibility each R. file contains R version and commented header with groundhog library (https://groundhogr.com/).
 
 ## Disclaimer
 The R code is provided without any guarantee and it is not intended for medical purposes.
