@@ -1,10 +1,6 @@
 # Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection
 This repository contains R code for reproducing results presented in manuscript "Electrogastrogram-derived Features for Automated Sickness Detection in Driving Simulator" and authored by Grega Jakus, Jaka Sodnik, and Nadica Miljković.
 
-If you find EGG-based features and R code useful for your own research and teaching class, please cite the following references:
-1) Gruden, T., Popović, N. B., Stojmenova, K., Jakus, G., Miljković, N., Tomažič, S., & Sodnik, J. (2021). Electrogastrography in autonomous vehicles—an objective method for assessment of motion sickness in simulated driving environments. Sensors, 21(2), 550.  https://doi.org/10.3390/s21020550
-2) Jakus, G., Sodnik, J., Miljković, N. (2022). Electrogastrogram-derived Features for AutomatedSickness Detectionin Driving Simulator. Under Review.
-
 ## GitHub repo contents
 This reporsitory contains both data and code, as well as [README.md](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/README.md) and [license](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/LICENSE) files.
 ### EGG-based parameters
@@ -16,7 +12,7 @@ EGG-based features are presented in the following .csv tables:
 5) [dat-noise_SNR-10dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-10dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -13 dB)
 6) [dat-noise_SNR-20dB.csv](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/dat-noise_SNR-20dB.csv) - EGG-based parameters/features derived from the semisynthetic dataset (by addition of pseudo-random colored noise of SNR = 0 dB, the actual mean value of SNR is -23 dB)
 ### Code for EGG analysis
-The R code for analysis of the features shared in .csv tables is given in the following scripts:
+The R code (Team, R. C. R. A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna. https://www.r-project.org, 2021) for analysis of the features shared in .csv tables is given in the following scripts:
 1) [comparison-noise.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/comparison-noise.R) - statistical analysis for comparison of noisy and non-noisy EGG-based parameters and for distinguishing statistical difference on data that correspond to nausea occurence
 2) [nausea-categorical.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/nausea-categorical.R) - descriptive statistics of categorical variables
 3) [rf-nausea-classification.R](https://github.com/NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection/blob/main/rf-nausea-classification.R) - classification of nausea occurence based on EGG parameters for each dataset separately
@@ -58,3 +54,8 @@ Authors’ gratitude goes to Nenad B. Popović for his long collaboration in stu
 ## Funding
 This research was funded by [HADRIAN](https://hadrianproject.eu/) (Holistic Approach for Driver Role Integration and Automation Allocation for European Mobility Needs) EU Horizon 2020 project, grant number 875597. It was partly supported also by the Slovenian Research Agency within the research program ICT4QoL - Information and Communications Technologies for Quality of Life, grant number P2-0246.
 N.M. was partly supported by the Ministry of Education, Science, and Technological Development, Republic of Serbia, grant number 451-03-68/2022-14/200103.
+
+## How to cite this repository?
+If you find EGG-based features and R code useful for your own research and teaching class, please cite the following references:
+1) Gruden, T., Popović, N. B., Stojmenova, K., Jakus, G., Miljković, N., Tomažič, S., & Sodnik, J. (2021). Electrogastrography in autonomous vehicles—an objective method for assessment of motion sickness in simulated driving environments. Sensors, 21(2), 550.  https://doi.org/10.3390/s21020550
+2) Jakus, G., Sodnik, J., Miljković, N. (2022). Electrogastrogram-derived Features for AutomatedSickness Detectionin Driving Simulator. Under Review.
