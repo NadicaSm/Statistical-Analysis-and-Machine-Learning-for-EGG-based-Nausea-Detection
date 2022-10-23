@@ -47,7 +47,7 @@ Each datatable shared in .csv format contains the following columns:
 21) nausea_onset - binary indicator whether for analyzed datasegment nausea occured or not
 
 ## NOTE
-For the sake of computational reproducibility each R. file contains R version and commented header with groundhog library (https://groundhogr.com/).
+For the sake of computational reproducibility, each R script contains R version and commented header with [groundhog](https://groundhogr.com/) function that loads packages and appropriate on the selected chosen date from [CRAN](https://cran.r-project.org/) (The Comprehensive R Archive Network).
 
 ## Disclaimer
 The R code is provided without any guarantee and it is not intended for medical purposes.
@@ -56,4 +56,5 @@ The R code is provided without any guarantee and it is not intended for medical 
 Authors’ gratitude goes to Nenad B. Popović for his long collaboration in studies related to EGG research and for fruitful discussions on feature extraction techniques followed by his scientific contribution published elsewhere. The Authors also acknowledge Timotej Gruden, PhD student, for his exceptional work in experiment design and measurement conduction.
 
 ## Funding
-This research was funded by HADRIAN (Holistic Approach for Driver Role Integration and Automation Allocation for European Mobility Needs) EU Horizon 2020 project, grant number 875597. It was partly supported also by the Slovenian Research Agency within the research pro-gram ICT4QoL - Information and Communications Technologies for Quality of Life, grant number P2-0246. N.M. was partly supported by the Ministry of Education, Science, and Technological Development, Republic of Serbia, grant number 451-03-68/2022-14/200103.
+This research was funded by [HADRIAN](https://hadrianproject.eu/) (Holistic Approach for Driver Role Integration and Automation Allocation for European Mobility Needs) EU Horizon 2020 project, grant number 875597. It was partly supported also by the Slovenian Research Agency within the research program ICT4QoL - Information and Communications Technologies for Quality of Life, grant number P2-0246.
+N.M. was partly supported by the Ministry of Education, Science, and Technological Development, Republic of Serbia, grant number 451-03-68/2022-14/200103.
