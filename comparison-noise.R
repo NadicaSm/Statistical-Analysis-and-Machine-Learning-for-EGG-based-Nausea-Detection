@@ -1,5 +1,4 @@
-# Code for producing results presented in Table 2 in the manuscript
-# Code for producing results presented in Table 5 in the manuscript
+# Code for producing results presented in Tables 2 and 5 in the manuscript
 # set working directory
 setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
@@ -27,7 +26,8 @@ library(effsize)
 # version.string R version 4.1.2 (2021-11-01)
 # nickname       Bird Hippie 
 
-# read data
+# read data (both files should be read, EGG-derived parameters from original data 
+# and from semisynthetic data)
 # non-noisy
  dat <- read.csv("dat.csv") 
 # noisy (uncomment for different SNRs)
@@ -47,7 +47,7 @@ mean(datN$snrEGG)
 # delta for non-normally distributed data.
 
 # Automatic checks for normality is added only in cases where it has been detected
-# for at least one SNR level of noisy parameters.
+# at least once.
 
 shapiro.test(dat$rms)
 shapiro.test(datN$rms)
@@ -63,7 +63,6 @@ shapiro.test(dat$median)
 shapiro.test(datN$median)
 p.median <- shapiro.test(dat$median)$p
 pN.median <- shapiro.test(datN$median)$p
-
 if (pN.median > 0.05 && p.median > 0.05){
   t.test(dat$median, datN$median, paired = T)
   cohen.d(dat$median, datN$median)
