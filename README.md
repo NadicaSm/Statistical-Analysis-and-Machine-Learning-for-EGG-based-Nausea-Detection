@@ -58,5 +58,5 @@ N.M. was partly supported by the Ministry of Education, Science, and Technologic
 ## How to cite this repository?
 If you find EGG-based features and R code useful for your own research and teaching class, please cite the following references:
 1) Jakus, G., Sodnik, J., & Miljković, N. (2022, October 23). NadicaSm/Statistical-Analysis-and-Machine-Learning-for-EGG-based-Nausea-Detection: v1 (Version v1). Version v1. Zenodo. https://doi.org/10.5281/zenodo.7242797 
-2) Jakus, G., Sodnik, J., Miljković, N. (2022). Electrogastrogram-derived Features for AutomatedSickness Detectionin Driving Simulator. Under Review.
+2) Jakus, G., Sodnik, J., & Miljković, N. (2022). Electrogastrogram-Derived Features for Automated Sickness Detection in Driving Simulator. Sensors, 22(22), 8616. https://doi.org/10.3390/s22228616
 3) Gruden, T., Popović, N. B., Stojmenova, K., Jakus, G., Miljković, N., Tomažič, S., & Sodnik, J. (2021). Electrogastrography in autonomous vehicles—an objective method for assessment of motion sickness in simulated driving environments. Sensors, 21(2), 550.  https://doi.org/10.3390/s21020550
